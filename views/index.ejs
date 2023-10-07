@@ -1,0 +1,17 @@
+<%- include("partials/header.ejs") %>
+
+<h1>This is a TodoList. Go forth! And be organised!</h1>
+<ul>
+    <!-- For each element in todoList Array create a list item with a checkbox -->
+    <% todoList.forEach(element => { %>
+       <li> <%= element %></li>
+    <% }); %>
+</ul>
+
+<form action="/create" method="POST">
+    <label for="task">Create a task</label><br>
+    <input type="text" id="taskInput" name="task">
+    <input type="submit" value="Create">
+</form>
+
+<%- include("partials/footer.ejs") %>

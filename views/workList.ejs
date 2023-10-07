@@ -1,11 +1,9 @@
 <%- include("partials/header.ejs") %>
 
-
-
-<h1>This is a TodoList. Go forth! And be organised!</h1>
+<h1>This is a TodoList. Go to work! And be organised!</h1>
 <ul>
     <!-- For each element in todoList Array create a list item with a checkbox -->
-    <% todoList.forEach(element => { %>
+    <% workList.forEach(element => { %>
        <li class="task"> <%= element %></li>
     <% }); %>
 </ul>

@@ -4,12 +4,17 @@ import bodyParser from "body-parser";
 const app = express();
 const port = 3000;
 let todoList = [];
+let workList = [];
 
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.get("/", (req,res) =>{
     res.render("index.ejs",{todoList: todoList});
+});
+
+app.get("/workList", (req,res) =>{
+    res.render("workList.ejs",{workList: workList});
 });
 
 app.post("/create", (req,res) =>{

@@ -22,6 +22,11 @@ app.post("/create", (req,res) =>{
     res.render("index.ejs",{todoList: todoList});
 });
 
+app.post("/work/create", (req,res)=>{
+    workList.push(req.body.workTask);
+    res.render("workList.ejs",{workList: workList});
+})
+
 app.listen(port, () =>{
     console.log(`Listening on port ${port}`);
 });

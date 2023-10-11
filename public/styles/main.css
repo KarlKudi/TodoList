@@ -1,7 +1,20 @@
+main{
+    text-align: center;
+}
+
 li{
     cursor: pointer;
 }
 
+div > h1{
+    font-size: 4rem;
+    margin-bottom: 50px;
+}
+
 .taskCompleted{
     text-decoration: line-through;
+}
+
+.todoList{
+    padding-top: 5%;
 }

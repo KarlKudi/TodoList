@@ -7,9 +7,9 @@
         <div>
         <!-- For each element in todoList Array create a list item with a checkbox -->
         <% todoList.forEach(element => { %>
-            <div id="<%= element %>">
+            <div class="task">
                 <input type="checkbox">
-                <label class="task">  <%= element %></label>
+                <label >  <%= element %></label>
             </div>
         <% }); %>
         </div>

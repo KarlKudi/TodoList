@@ -2,14 +2,16 @@
 
 
 <div class="container-fluid">
-    <div class="row align-items-center todoList">
+    <div class="todoList">
         <h1 class="mainText">This is a TodoList. Go forth! And be organised!</h1>
-        <div>
+        <div class="taskList">
         <!-- For each element in todoList Array create a list item with a checkbox -->
         <% todoList.forEach(element => { %>
             <div class="task">
+                <div class="text">
+                    <label><%= element %></label>
+                </div>
                 <input type="checkbox">
-                <label >  <%= element %></label>
             </div>
         <% }); %>
         </div>

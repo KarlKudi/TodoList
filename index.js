@@ -13,7 +13,7 @@ app.get("/", (req,res) =>{
     res.render("index.ejs",{todoList: todoList});
 });
 
-app.get("/workList", (req,res) =>{
+app.get("/work", (req,res) =>{
     res.render("workList.ejs",{workList: workList});
 });
 

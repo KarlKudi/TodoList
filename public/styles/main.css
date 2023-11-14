@@ -1,19 +1,41 @@
+body{
+    height: 100%;
+}
+
+html{
+    height: 100%;
+}
+
 main{
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.903);
+    background-color: rgba(226, 233, 233, 0.903);
     padding: 50px;
 }
 
 div > h1{
-    font-size: 48px;
+    font-size: 32px;
     margin-bottom: 50px;
 }
 
+label[for=task]{
+    text-align: left;
+    font-size: 18px;
+}
+
+.task{
+    margin-bottom: 20px;
+}
+
+.taskCheckbox{
+    width: 25px;
+    height: 25px;
+}
+
 .text{
-    font-size: 32px;
+    font-size: 24px;
     display: inline-block;
     text-align: left;
-    width: 750px;
+    width: 350px;
 }
 
 .text > label{

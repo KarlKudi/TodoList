@@ -22,7 +22,7 @@ app.post("/create", (req,res) =>{
     res.render("index.ejs",{todoList: todoList});
 });
 
-app.post("/work/create", (req,res)=>{
+app.post("/workCreate", (req,res)=>{
     workList.push(req.body.workTask);
     res.render("workList.ejs",{workList: workList});
 })

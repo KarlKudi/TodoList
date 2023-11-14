@@ -1,6 +1,5 @@
 <%- include("partials/header.ejs") %>
 
-
 <div class="container-fluid">
     <div class="todoList">
         <h1 class="mainText">This is a TodoList. Go forth! And be organised!</h1>
@@ -11,7 +10,7 @@
                 <div class="text">
                     <label><%= element %></label>
                 </div>
-                <input type="checkbox">
+                <input class="taskCheckbox" type="checkbox">
             </div>
         <% }); %>
         </div>
